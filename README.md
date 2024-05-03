@@ -37,10 +37,11 @@ modes include:
 A video showing these tracking modes is available here:
 https://www.youtube.com/watch?v=C6RoOf4HDbE
 
-# Shiny app
+# Shiny app / OBS Integration
 
 There is a shiny app in `app.py` designed to be used as a custom browser
-dock in OBS. To do this you can use this OBS Script
+dock in [OBS](https://obsproject.com/). To do this you can use this OBS
+Script
 ([`shiny.lua`](https://gist.github.com/mitchelloharawild/cb0328aa7190f861838ef9327e0c7962))
 to run the Shiny app when OBS is launched. Then add a custom browser
 dock to OBS with the url `0.0.0.0:<port>`. This allows you to set the AI
