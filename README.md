@@ -8,8 +8,8 @@
 <!-- badges: end -->
 
 This Python script allows you to set the AI mode on the OBSBOT Tiny 2
-webcam. USB `controlWrite` data was obtained by packet inspection on
-Windows with [USBPcap](https://github.com/desowin/usbpcap) and
+webcam. USB control data was obtained by packet inspection on Windows
+with [USBPcap](https://github.com/desowin/usbpcap) and
 [Wireshark](https://gitlab.com/wireshark/wireshark), then the Python
 script was adapted from the USB replay generated with
 [usbrply](https://github.com/JohnDMcMaster/usbrply). Use at your own
