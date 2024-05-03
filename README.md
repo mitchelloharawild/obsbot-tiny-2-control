@@ -27,8 +27,8 @@ modes include:
 - **upperbody**: Tracking which focuses on the upper body
 - **closeup**: Closeup tracking of the mid-torso and above
 - **headless**: Tracking of everything below your head
-- ~~**desk**: Tilted down 30 degrees immediately in-front of the camera
-  with image warping to show the desk~~
+- **desk**: Tilted down 30 degrees immediately in-front of the camera
+  with image warping to show the desk
 - **whiteboard**: Using corner indicating stickers, frame the camera and
   warp the image to show a whiteboard
 - **hand**: Follows your hands rather than your face/body.
