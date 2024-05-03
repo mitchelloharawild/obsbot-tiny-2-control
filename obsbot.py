@@ -89,6 +89,9 @@ def write_ai_mode(dev, mode):
                         timeout=(1000 if timeout is None else timeout))
     
     control_write(0x21, 0x01, 0x0600, 0x0200, ai_modes[mode])
+    
+    # Delay for stability
+    time.sleep(1)
         
 def write_sleep_mode(dev, sleep):
     def control_write(bRequestType, bRequest, wValue, wIndex, data, timeout=None):
@@ -135,16 +138,16 @@ def main():
     dev.setAutoDetachKernelDriver(True)
     dev.claimInterface(0)
     dev.resetDevice()
+    
     for mode in args.ai or []:
         write_ai_mode(dev, mode)
     # if (args.sleep):
     #     write_sleep_mode(dev, True)
     # if (args.wake):
     #     write_sleep_mode(dev, False)
-      
-    # Small delay for stability
-    time.sleep(0.1)
+
     dev.releaseInterface(0)
+    dev.close()
 
 if __name__ == "__main__":
     main()
