@@ -5,6 +5,7 @@
 # Python controls for the OBSBOT Tiny 2
 
 <!-- badges: start -->
+
 <!-- badges: end -->
 
 This Python script allows you to set the AI mode on the OBSBOT Tiny 2
@@ -15,6 +16,10 @@ script was adapted from the USB replay generated with
 [usbrply](https://github.com/JohnDMcMaster/usbrply). Use at your own
 risk - hopefully these features will be formally supported on Linux in
 the future!
+
+I’ve now switched to using <https://github.com/cgevans/tiny2>, and so
+ongoing development of this project will be limited. Pull requests are
+welcomed.
 
 # Usage
 
